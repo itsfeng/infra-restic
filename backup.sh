@@ -147,6 +147,12 @@ restic_backup_db "/storage-files/backups/backup-influx-db/influxdb-dump-${TIMEST
 restic_cleanup
 divider
 
+# pihole
+restic_source_env pihole
+restic_backup_app "/storage-files/pihole"
+restic_cleanup
+divider
+
 ## remove tars
 # rm -rf /storage-files/backups/backup-wp-db/wp-dump-${TIMESTAMP}.sql
 rm -rf /storage-files/backups/backup-nc-db/nc-dump-${TIMESTAMP}.sql
