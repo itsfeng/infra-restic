@@ -1,0 +1,4 @@
+restic-env.sh
+restic-pw-*
+*.log
+telegram*
